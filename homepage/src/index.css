@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* AOS CSS is already imported */
+/* aos-init {
+    opacity: 0;
+  }
+  
+  aos-animate {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+  }
+  @keyframes popUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .pop-up {
+    animation: popUp 1s ease-in-out;
+  } */
+  
+  .typing-effect {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid transparent; /* Simulate the cursor */
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
