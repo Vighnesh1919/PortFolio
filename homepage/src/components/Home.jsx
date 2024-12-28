@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-
+//import MeteorShower from "./MeteorShower ";
 import 'aos/dist/aos.css';
 import NavBar from './NavBar';
 import Button from './Button';
@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* Navigation Bar */}
       <NavBar />
-
+      {/* <MeteorShower /> */}
 
       <div className=" overflow-hidden flex flex-col  justify-center text-center  h-screen bg-[#0E0526] relative">
       <div className="absolute flex  items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-135deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-[-90vh] overflow-hidden"></div>
@@ -76,38 +76,50 @@ const Home = () => {
 
 
 
+      <div className="overflow-hidden flex items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
+  <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
 
-      {/* Find Top Talent Section */}
-      <div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#0E0526] relative">
-        <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
-
-        <img
-  src={talentImage}
-  alt="Talent"
-  className="w-[50%] h-auto object-cover mr-10"
-  data-aos="slide-right"
-/>
+  {/* About Me and Technical Skills Section */}
+  <div className="max-w-2xl text-white mt-[-350px]">
+  <h2 className="text-4xl font-extrabold text-gray-100 mb-4">About Me</h2>
+  <p className="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="slide-right" data-aos-duration="1000">
+  
+    I'm a passionate software developer with a knack for building dynamic web applications. With a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js), I specialize in both frontend and backend development. I love transforming ideas into interactive and user-friendly experiences while leveraging modern technologies. My approach is driven by creativity, problem-solving, and the joy of continuously learning and improving.
+  
+</p>
 
 
-        <div className="flex flex-col items-start max-w-xl" data-aos="fade-left">
-          <h2 className="text-6xl font-poppins-black text-gray-800 mb-6">
-            Find Top Talent
-          </h2>
-          <p className="text-xl font-poppins-black text-gray-600 mb-8 leading-relaxed">
-            Discover highly skilled freelancers with the expertise to bring your
-            innovative ideas to life. Let’s turn your vision into a reality with
-            unmatched professionalism and creativity.
-          </p>
-          <div className="flex gap-6 justify-center mb-10">
-            <button className="px-6 py-3 text-white bg-[#40c9a2] rounded-lg hover:bg-[#36a889] transition">
-              Get Started
-            </button>
-            <button className="px-6 py-3 text-gray-800 bg-gray-200 border border-gray-300 rounded-lg hover:bg-gray-300 hover:text-gray-800 transition">
-              Browse
-            </button>
-          </div>
-        </div>
-      </div>
+
+    {/* Technical Skills */}
+    {/* <h3 className="text-3xl font-semibold text-gray-100 mb-4">Technical Skills</h3>
+    <ul className="text-lg text-gray-300 mb-6 list-disc pl-5">
+      <li><strong>Web Development:</strong> MERN Stack (MongoDB, Express.js, React, Node.js)</li>
+      <li><strong>Frontend:</strong> React, HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap</li>
+      <li><strong>Backend:</strong> Node.js, Express.js</li>
+      <li><strong>Problem Solving:</strong> DSA Enthusiast, Algorithmic problem solver</li>
+      <li><strong>Languages:</strong> C, C++, Java</li>
+      <li><strong>OOPS Concepts:</strong> Object-Oriented Programming Principles</li>
+    </ul> */}
+
+    {/* Achievements */}
+    {/* <h3 className="text-3xl font-semibold text-gray-100 mb-4">Achievements</h3>
+    <ul className="text-lg text-gray-300 list-disc pl-5">
+      <li><strong>Leetcode:</strong> Solved 500+ questions with a Contest rating of 1600+.</li>
+      <li><strong>Codeforces:</strong> Solved 100+ questions and achieved a 1000+ contest rating.</li>
+      <li>Secured <strong>3rd place</strong> in a technical treasure hunt competition, showcasing exceptional problem-solving skills and teamwork.</li>
+    </ul> */}
+  </div>
+
+  {/* Image Section */}
+  <img
+    src={talentImage}
+    alt="Talent"
+    className="w-[50%] h-auto object-cover ml-10 mt-2"
+    data-aos="slide-left"
+  />
+</div>
+
+
 
 
 
