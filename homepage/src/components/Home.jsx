@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './NavBar';
 import Button from './Button';
-import talentImage from '../assets/talent.png';
+import react from '../assets/React.gif';
 import unlockImage from '../assets/unlock.png';
 import logo1image from '../assets/logo-1.png';
 import logo2image from '../assets/logo-2.png';
@@ -14,6 +14,8 @@ import broImage from '../assets/bro.png';
 import 'aos/dist/aos.css'; // Don't forget to import AOS styles
 import videoSrc from '../assets/video.mp4';
 //import style from '../App.css';
+
+import ava from '../assets/Java.png';
 
 
 
@@ -112,11 +114,30 @@ const Home = () => {
 
   {/* Image Section */}
   <img
-    src={talentImage}
-    alt="Talent"
-    className="w-[50%] h-auto object-cover ml-10 mt-2"
-    data-aos="slide-left"
-  />
+  src={react}
+  alt="Talent"
+  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
+  data-aos="slide-left"
+/>
+<img
+  src={react}
+  alt="Talent"
+  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
+  data-aos="slide-left"
+/>
+<img
+  src={react}
+  alt="Talent"
+  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
+  data-aos="slide-left"
+/>
+<img
+  src={ava}
+  alt="Talent"
+  className="w-[6%] h-[auto] object-cover ml-10 mt-2 "
+  data-aos="slide-left"
+/>
+
 </div>
 
 
