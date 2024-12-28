@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import NavBar from './NavBar';
 import Button from './Button';
@@ -31,12 +32,10 @@ const Home = () => {
   
 
   return (
-    <div className="overflow bg-[#17092E]">
+    <div className="overflow bg-[#0E0526]">
 
       {/* Navigation Bar */}
       <NavBar />
-
-
 
 
       <div className=" overflow-hidden flex flex-col  justify-center text-center  h-screen bg-[#0E0526] relative">
@@ -44,21 +43,28 @@ const Home = () => {
 
       
         {/* Text and Buttons */}
-        <div className="relative z-10 text mt-[-60px] ml-4" data-aos="slide-right">
-  <h2 className="text-2xl sm:text-7xl lg:text-6xl font-extrabold text-white mb-4 leading-tight ">
+        <div
+  className="relative z-10 mt-[-60px] ml-4 p-6 sm:p-12 rounded-lg via-gray-900 to-black shadow-lg"
+  
+>
+<div className="flex flex-wrap justify-center items-center   space-x-4" data-aos="zoom-in"
+        data-aos-duration="1000">
+  <h2 className="text-3xl sm:text-6xl lg:text-5xl font-bold text-white leading-tight tracking-wide">
     Hi, I am
   </h2>
-  <h1 className="text-6xl sm:text-5xl lg:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-400 to-teal-500 ">
+  <h1 className="text-6xl sm:text-7xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-400 to-teal-500 drop-shadow-md">
     Vighnesh Barage
   </h1>
-
-  <h2 className="text-3xl font-poppins-black text-white mb-4 typing-effect">
-    Passionate Coder & Full Stack Developer
-  </h2>
-  <p className="text-xl font-poppins-black text-white mb-8 typing-effect">
-    We bring talent and opportunity together
-  </p>
 </div>
+
+  <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-300 mt-6 mb-4  tracking-wide leading-relaxed" data-aos="zoom-in"
+        data-aos-duration="1000">
+    Passionate Coder & Full Stack Developer
+  </p>
+
+  
+</div>
+
 
 
 
@@ -72,7 +78,7 @@ const Home = () => {
 
 
       {/* Find Top Talent Section */}
-      <div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#17092E] relative">
+      <div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#0E0526] relative">
         <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
 
         <img
@@ -109,7 +115,7 @@ const Home = () => {
       
 
      {/* Unlock New Opportunities */}
-<div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#17092E] relative" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+<div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#0E0526] relative" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
   {/* <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[135deg] scale-110 skew-x-6 translate-x-[-150%] translate-y-[-25%] top-1/2 left-1/2 overflow-hidden"></div> */}
 
   {/* Content */}
@@ -145,7 +151,7 @@ const Home = () => {
 
 
 {/* Reviews Section */}
-<div className="bg-[#17092E] py-20 px-10">
+<div className="bg-[#0E0526] py-20 px-10">
   <div className="flex justify-center gap-8">
     {/* Review Box 1 */}
     <div
@@ -257,7 +263,7 @@ const Home = () => {
 
 
 {/* Sign Up Content */}
-<div className="bg-[#17092E] py-32 px-10">
+<div className="bg-[#0E0526] py-32 px-10">
   <div
     className="relative z-10 text-center px-4"
     data-aos="zoom-in" // Apply the animation when scrolled into view
@@ -288,7 +294,7 @@ const Home = () => {
 
 
       {/* Trusted Companies Section (Unchanged) */}
-<div className="bg-[#17092E] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
+<div className="bg-[#0E0526] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
   <h2 className="text-4xl font-poppins-black text-center text-gray-800 mb-10">
     Trusted by Leading Companies
   </h2>
