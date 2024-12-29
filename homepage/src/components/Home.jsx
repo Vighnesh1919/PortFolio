@@ -6,10 +6,7 @@ import NavBar from './NavBar';
 import Button from './Button';
 import react from '../assets/React.gif';
 import unlockImage from '../assets/unlock.png';
-import logo1image from '../assets/logo-1.png';
-import logo2image from '../assets/logo-2.png';
-import logo3image from '../assets/logo-3.png';
-import logo4image from '../assets/logo-4.png';
+
 import broImage from '../assets/bro.png';
 import 'aos/dist/aos.css'; // Don't forget to import AOS styles
 import videoSrc from '../assets/video.mp4';
@@ -18,6 +15,7 @@ import videoSrc from '../assets/video.mp4';
 import ava from '../assets/Java.png';
 import js from '../assets/javascript.png';
 import nodejs from '../assets/nodejs.png';
+import ImageItems from './ImageItems';
 
 
 
@@ -117,213 +115,12 @@ const Home = () => {
   <div className="flex flex-wrap gap-10 items-center justify-end w-2/5 mr-10 -mt-15 " data-aos="fade-left" data-aos-duration="1200" style={{ marginTop: '-130px' }}>
     {/* Icon Items */}
     <div className="flex flex-col items-center group">
-  <img
-    src={nodejs}
-    alt="Node.js"
-    className="w-20 h-20 object-cover bg-transparent transition-transform duration-300 transform group-hover:scale-110 group-hover:rotate-3"
-    data-aos="zoom-in"
-    data-aos-delay="100"
-  />
-  <p className="mt-2 text-lg font-bold text-gray-200 transition-all duration-300 group-hover:text-blue-400">
-    Node.js
-  </p>
+    <ImageItems />
 </div>
 
 
 
-    <div className="flex flex-col items-center">
-      <img
-        src={js}
-        alt="JavaScript"
-        className="w-20 h-20 object-cover bg-transparent"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">JavaScript</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={react}
-        alt="React JS"
-        className="w-20 h-20 object-cover bg-white"
-        data-aos="zoom-in"
-        data-aos-delay="300"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">React JS</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-
-    {/* Add More Icons Here */}
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center">
-      <img
-        src={ava}
-        alt="Avatar"
-        className="w-20 h-20 object-cover"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      />
-      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
-    </div>
-    <div className="flex flex-col items-center group">
-  <img
-    src={ava}
-    alt="Avatar"
-    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-110"
-    data-aos="zoom-in"
-    data-aos-delay="400"
-  />
-  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
-    Avatar
-  </p>
-</div>
-
-    <div className="flex flex-col items-center group">
-  <img
-    src={ava}
-    alt="Avatar"
-    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-110"
-    data-aos="zoom-in"
-    data-aos-delay="400"
-  />
-  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
-    Avatar
-  </p>
-</div>
-
-<div className="flex flex-col items-center group">
-  <img
-    src={ava}
-    alt="Avatar"
-    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-90 group-hover:rotate-3"
-    data-aos="zoom-in"
-    data-aos-delay="400"
-  />
-  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
-    Avatar
-  </p>
-</div>
-
-
-
+    
   </div>
   
 </div>
@@ -453,31 +250,11 @@ const Home = () => {
   </h2>
   <div className="flex justify-center gap-12 flex-wrap">
 
-  <img
-  src={logo1image}
-  alt="Talent"
-  className="w-32 h-32 object-contain" 
-/>
+ 
 
 
 
-<img
-  src={logo2image}
-  alt="Talent"
-  className="w-32 h-32 object-contain" 
-/>
 
-<img
-  src={logo3image}
-  alt="Talent"
-  className="w-32 h-32 object-contain" 
-/>
-
-<img
-  src={logo4image}
-  alt="Talent"
-  className="w-32 h-32 object-contain" 
-/>
 
   </div>
 </div>
