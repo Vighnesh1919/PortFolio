@@ -16,6 +16,8 @@ import videoSrc from '../assets/video.mp4';
 //import style from '../App.css';
 
 import ava from '../assets/Java.png';
+import js from '../assets/javascript.png';
+import nodejs from '../assets/nodejs.png';
 
 
 
@@ -41,7 +43,7 @@ const Home = () => {
       {/* <MeteorShower /> */}
 
       <div className=" overflow-hidden flex flex-col  justify-center text-center  h-screen bg-[#0E0526] relative">
-      <div className="absolute flex  items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-135deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-[-90vh] overflow-hidden"></div>
+      <div className="absolute flex  items-center bg-[rgba(30,200,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-135deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-[-90vh] overflow-hidden"></div>
 
       
         {/* Text and Buttons */}
@@ -77,110 +79,254 @@ const Home = () => {
 
 
 
-
       <div className="overflow-hidden flex items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
-  <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
+  {/* Background Blur */}
+  <div className="absolute flex justify-center items-center bg-[rgba(30,200,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
 
-  {/* About Me and Technical Skills Section */}
-  <div className="max-w-2xl text-white mt-[-350px]">
-  <h2 className="text-4xl font-extrabold text-gray-100 mb-4">About Me</h2>
-  <p className="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="slide-right" data-aos-duration="1000">
+  {/* About Me Section */}
+  <div className="max-w-2xl text-white -mt-32">
+  <h2 className="text-4xl font-extrabold text-gray-100 mb-4" data-aos="fade-in" data-aos-delay="700">About Me</h2>
   
-    I'm a passionate software developer with a knack for building dynamic web applications. With a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js), I specialize in both frontend and backend development. I love transforming ideas into interactive and user-friendly experiences while leveraging modern technologies. My approach is driven by creativity, problem-solving, and the joy of continuously learning and improving.
-  
-</p>
-
-
-
-    {/* Technical Skills */}
-    {/* <h3 className="text-3xl font-semibold text-gray-100 mb-4">Technical Skills</h3>
-    <ul className="text-lg text-gray-300 mb-6 list-disc pl-5">
-      <li><strong>Web Development:</strong> MERN Stack (MongoDB, Express.js, React, Node.js)</li>
-      <li><strong>Frontend:</strong> React, HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap</li>
-      <li><strong>Backend:</strong> Node.js, Express.js</li>
-      <li><strong>Problem Solving:</strong> DSA Enthusiast, Algorithmic problem solver</li>
-      <li><strong>Languages:</strong> C, C++, Java</li>
-      <li><strong>OOPS Concepts:</strong> Object-Oriented Programming Principles</li>
-    </ul> */}
-
-    {/* Achievements */}
-    {/* <h3 className="text-3xl font-semibold text-gray-100 mb-4">Achievements</h3>
-    <ul className="text-lg text-gray-300 list-disc pl-5">
-      <li><strong>Leetcode:</strong> Solved 500+ questions with a Contest rating of 1600+.</li>
-      <li><strong>Codeforces:</strong> Solved 100+ questions and achieved a 1000+ contest rating.</li>
-      <li>Secured <strong>3rd place</strong> in a technical treasure hunt competition, showcasing exceptional problem-solving skills and teamwork.</li>
-    </ul> */}
-  </div>
-
-  {/* Image Section */}
-  <img
-  src={react}
-  alt="Talent"
-  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
-  data-aos="slide-left"
-/>
-<img
-  src={react}
-  alt="Talent"
-  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
-  data-aos="slide-left"
-/>
-<img
-  src={react}
-  alt="Talent"
-  className="w-[6%] h-[auto] object-cover ml-10 mt-2 bg-transparent"
-  data-aos="slide-left"
-/>
-<img
-  src={ava}
-  alt="Talent"
-  className="w-[6%] h-[auto] object-cover ml-10 mt-2 "
-  data-aos="slide-left"
-/>
-
-</div>
-
-
-
-
-
-
-      
-
-     {/* Unlock New Opportunities */}
-<div className=" overflow-hidden flex items-center justify-between py-15 px-10 bg-[#0E0526] relative" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-  {/* <div className="absolute flex justify-center items-center bg-[rgba(30,160,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[135deg] scale-110 skew-x-6 translate-x-[-150%] translate-y-[-25%] top-1/2 left-1/2 overflow-hidden"></div> */}
-
-  {/* Content */}
-  <div className="flex flex-col items-start ml-10" data-aos="fade-right">
-    <h2 className="text-6xl font-poppins-black text-left text-gray-800 mb-6">
-      Unlock New Opportunities
-    </h2>
-    <p className="text-xl font-poppins-black text-left text-gray-600 mb-8 leading-relaxed">
-      Open doors to amazing projects and meaningful collaborations that can
-      redefine your career path. Explore new opportunities and achieve your
-      professional goals with confidence and creativity.
+  <div className="mb-8">
+    <h3 className="text-3xl font-semibold text-gray-200 mb-4" data-aos="fade-in" data-aos-delay="700">Web Development</h3>
+    <p
+      className="text-xl text-gray-300 leading-relaxed"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      I'm a passionate software developer with expertise in building dynamic web applications. Proficient in the MERN stack (MongoDB, Express.js, React, Node.js), I specialize in both frontend and backend development, creating seamless and interactive user experiences.
     </p>
-    <div className="flex gap-6">
-      <button className="px-6 py-3 text-white bg-[#40c9a2] rounded-lg hover:bg-[#36a889] transition">
-        Create Profile
-      </button>
-      <button className="px-6 py-3 text-gray-800 bg-gray-200 border border-gray-300 rounded-lg hover:bg-gray-300 hover:text-gray-800 transition">
-        Explore Project
-      </button>
-    </div>
   </div>
 
-  {/* Image */}
-  <img
-    src={unlockImage}
-    alt="Unlock New Opportunities"
-    maxwidth="100%"
-     className="w-[50%] h-auto object-cover mr-1"
-    data-aos="slide-left"
-  />
+  <div className="mt-10">
+    <h3 className="text-3xl font-semibold text-gray-200 mb-4 " data-aos="fade-in"
+    data-aos-delay="700">DSA Practice</h3>
+    <p
+      className="text-xl text-gray-300 leading-relaxed"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      I'm passionate about Data Structures and Algorithms (DSA). With over 1600+ rating on LeetCode and having solved 600+ questions, I enjoy tackling complex problems, optimizing solutions, and continuously improving my algorithmic skills to build scalable and efficient systems.
+    </p>
+  </div>
 </div>
 
+
+
+  {/* Technical Skills Section */}
+  <div className="flex flex-wrap gap-10 items-center justify-end w-2/5 mr-10 -mt-15 " data-aos="fade-left" data-aos-duration="1200" style={{ marginTop: '-130px' }}>
+    {/* Icon Items */}
+    <div className="flex flex-col items-center group">
+  <img
+    src={nodejs}
+    alt="Node.js"
+    className="w-20 h-20 object-cover bg-transparent transition-transform duration-300 transform group-hover:scale-110 group-hover:rotate-3"
+    data-aos="zoom-in"
+    data-aos-delay="100"
+  />
+  <p className="mt-2 text-lg font-bold text-gray-200 transition-all duration-300 group-hover:text-blue-400">
+    Node.js
+  </p>
+</div>
+
+
+
+    <div className="flex flex-col items-center">
+      <img
+        src={js}
+        alt="JavaScript"
+        className="w-20 h-20 object-cover bg-transparent"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">JavaScript</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={react}
+        alt="React JS"
+        className="w-20 h-20 object-cover bg-white"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">React JS</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+
+    {/* Add More Icons Here */}
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <img
+        src={ava}
+        alt="Avatar"
+        className="w-20 h-20 object-cover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      />
+      <p className="mt-2 text-lg font-bold text-gray-200">Avatar</p>
+    </div>
+    <div className="flex flex-col items-center group">
+  <img
+    src={ava}
+    alt="Avatar"
+    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-110"
+    data-aos="zoom-in"
+    data-aos-delay="400"
+  />
+  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
+    Avatar
+  </p>
+</div>
+
+    <div className="flex flex-col items-center group">
+  <img
+    src={ava}
+    alt="Avatar"
+    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-110"
+    data-aos="zoom-in"
+    data-aos-delay="400"
+  />
+  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
+    Avatar
+  </p>
+</div>
+
+<div className="flex flex-col items-center group">
+  <img
+    src={ava}
+    alt="Avatar"
+    className="w-20 h-20 object-cover transition-transform duration-300 transform group-hover:scale-90 group-hover:rotate-3"
+    data-aos="zoom-in"
+    data-aos-delay="400"
+  />
+  <p className="mt-2 text-lg font-bold text-gray-200 transition-colors duration-300 group-hover:text-blue-400">
+    Avatar
+  </p>
+</div>
+
+
+
+  </div>
+  
+</div>
 
 
 {/* Reviews Section */}
@@ -295,33 +441,7 @@ const Home = () => {
 {/* Background Shape */}
 
 
-{/* Sign Up Content */}
-<div className="bg-[#0E0526] py-32 px-10">
-  <div
-    className="relative z-10 text-center px-4"
-    data-aos="zoom-in" // Apply the animation when scrolled into view
-    data-aos-duration="800" // Duration for the animation
-    data-aos-delay="10" // Delay before the animation starts (optional)
-  >
-    {/* Background shape with clearer appearance, reduced opacity and height */}
-    <div className="absolute bg-[rgba(30,160,170,0.2)] rounded-full w-[950px] h-[300px] transform scale-110 translate-x-[-50%] translate-y-[-50%] top-1/2 left-1/2 z-0"></div>
-    <h2 className="text-3xl font-poppins-black text-gray-800 mb-6 relative z-10">
-    Join our community and start discovering incredible opportunities.
-    </h2>
-    <h2 className="text-xl font-poppins-black text-gray-800 mb-6 relative z-10">
-      Sign Up Today
-    </h2>
 
-    <div className="flex justify-center gap-6 relative z-10">
-      <button className="px-8 py-4 text-white bg-[#36a889] rounded-lg hover:bg-[#2f9c74] transition">
-        Join Now
-      </button>
-      <button className="px-8 py-4 text-teal-500 bg-[#e0e0e0] border border-[#c0c0c0] rounded-lg hover:bg-[#b0b0b0] hover:text-teal-600 transition">
-        Learn More
-      </button>
-    </div>
-  </div>
-</div>
 
 
 
