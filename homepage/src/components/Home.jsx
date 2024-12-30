@@ -4,17 +4,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './NavBar';
 import Button from './Button';
-import react from '../assets/React.gif';
+import react from '../assets/logo/React.gif';
 import unlockImage from '../assets/unlock.png';
 
 import broImage from '../assets/bro.png';
 import 'aos/dist/aos.css'; // Don't forget to import AOS styles
 import videoSrc from '../assets/video.mp4';
 //import style from '../App.css';
+import Projects from "./Projects";
 
-import ava from '../assets/Java.png';
-import js from '../assets/javascript.png';
-import nodejs from '../assets/nodejs.png';
 import ImageItems from './ImageItems';
 
 
@@ -128,108 +126,12 @@ const Home = () => {
 
 {/* Reviews Section */}
 <div className="bg-[#0E0526] py-20 px-10">
+  <div className="text-center mb-10">
+    <h1 className="text-3xl font-bold text-white">Projects</h1>
+  </div>
   <div className="flex justify-center gap-8">
-    {/* Review Box 1 */}
-    <div
-      className="bg-gray-100 p-6 rounded-lg shadow-lg w-1/3 flex flex-col justify-between h-[450px] border border-[#40c9a2]"
-      data-aos="fade-up"
-      data-aos-delay="10"
-    >
-      <div className="flex items-center mb-4">
-        <img
-          src="https://via.placeholder.com/50"
-          alt="John Doe"
-          className="w-12 h-12 rounded-full mr-4"
-        />
-        <div className="text-left">
-          <h4 className="font-semibold text-gray-800">John Doe</h4>
-          <p className="text-gray-500">CEO, Tech Innovators</p>
-        </div>
-      </div>
-
-      {/* Star Rating */}
-      <div className="flex items-center mb-4">
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      </div>
-
-      <p className="text-lg text-gray-600 flex-grow">
-        "This platform was a game changer for our company. We were able to hire highly skilled freelancers 
-        who delivered exceptional results within tight deadlines. The ease of use and smooth process made it 
-        effortless to scale our team quickly. I’m grateful for the seamless experience!"
-      </p>
-    </div>
-
-    {/* Review Box 2 */}
-    <div
-      className="bg-gray-100 p-6 rounded-lg shadow-lg w-1/3 flex flex-col justify-between h-[450px] border border-[#40c9a2]"
-      data-aos="fade-up"
-      data-aos-delay="20"
-    >
-      <div className="flex items-center mb-4">
-        <img
-          src="https://via.placeholder.com/50"
-          alt="Jane Smith"
-          className="w-12 h-12 rounded-full mr-4"
-        />
-        <div className="text-left">
-          <h4 className="font-semibold text-gray-800">Jane Smith</h4>
-          <p className="text-gray-500">Founder, Creative Solutions</p>
-        </div>
-      </div>
-
-      {/* Star Rating */}
-      <div className="flex items-center mb-4">
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      </div>
-
-      <p className="text-lg text-gray-600 flex-grow">
-        "I found exceptional talents through this platform. The freelancers are professional, 
-        creative, and deliver high-quality work. The platform's ability to match me with the right professionals 
-        allowed my startup to grow exponentially, and we could scale quickly. Highly recommended!"
-      </p>
-    </div>
-
-    {/* Review Box 3 */}
-    <div
-      className="bg-gray-100 p-6 rounded-lg shadow-lg w-1/3 flex flex-col justify-between h-[450px] border border-[#40c9a2]"
-      data-aos="fade-up"
-      data-aos-delay="30"
-    >
-      <div className="flex items-center mb-4">
-        <img
-          src="https://via.placeholder.com/50"
-          alt="Mark Lee"
-          className="w-12 h-12 rounded-full mr-4"
-        />
-        <div className="text-left">
-          <h4 className="font-semibold text-gray-800">Mark Lee</h4>
-          <p className="text-gray-500">Project Manager, Build Corp</p>
-        </div>
-      </div>
-
-      {/* Star Rating */}
-      <div className="flex items-center mb-4">
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-        <svg className="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-      </div>
-
-      <p className="text-lg text-gray-600 flex-grow">
-        "WorkSphere has been an indispensable tool for us. It helped us onboard professionals
-        who brought their A-game, working together seamlessly. The platform made recruitment 
-        efficient and stress-free. I highly recommend it for any growing company in need of top-tier talent!"
-      </p>
-    </div>
+    {/* Projects Component */}
+    <Projects />
   </div>
 </div>
 

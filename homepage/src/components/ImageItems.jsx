@@ -4,22 +4,22 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import ava from '../assets/Java.png';
-import react from '../assets/react.png';
-import js from '../assets/javascript.png';
-import nodejs from '../assets/nodejs.png';
-import html from '../assets/html.png';
-import next from '../assets/Nextjs.png';
-import typescript from '../assets/typescript.png';
-import tailwind from '../assets/tailwind-css.png';
-import mongo from '../assets/mongo-db.png';
-import mysql from '../assets/mysql.png';
-import go from '../assets/golang.png';
-import git from '../assets/git.png';
-import express from '../assets/express.png';
-import redux from '../assets/redux.png';
-import postman from '../assets/postman.png';
-import cpp from '../assets/cpp.png';
+import ava from '../assets/logo/Java.png';
+import react from '../assets/logo/react.png';
+import js from '../assets/logo/javascript.png';
+import nodejs from '../assets/logo/nodejs.png';
+import html from '../assets/logo/html.png';
+import next from '../assets/logo/Nextjs.png';
+import typescript from '../assets/logo/typescript.png';
+import tailwind from '../assets/logo/tailwind-css.png';
+import mongo from '../assets/logo/mongo-db.png';
+import mysql from '../assets/logo/mysql.png';
+import go from '../assets/logo/golang.png';
+import git from '../assets/logo/git.png';
+import express from '../assets/logo/express.png';
+import redux from '../assets/logo/redux.png';
+import postman from '../assets/logo/postman.png';
+import cpp from '../assets/logo/cpp.png';
 
 
 
