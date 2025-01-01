@@ -14,6 +14,7 @@ import videoSrc from '../assets/video.mp4';
 import Projects from "./Projects";
 
 import ImageItems from './ImageItems';
+import Experience from "./Experience";
 
 
 
@@ -136,20 +137,17 @@ const Home = () => {
 </div>
 
 
+
+
+
+
+
+
+
+
      
-{/* Background Shape */}
-
-
-
-
-
-
-
-      {/* Trusted Companies Section (Unchanged) */}
 <div className="bg-[#0E0526] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
-  <h2 className="text-4xl font-poppins-black text-center text-gray-800 mb-10">
-    Trusted by Leading Companies
-  </h2>
+<Experience />
   <div className="flex justify-center gap-12 flex-wrap">
 
  
@@ -161,7 +159,7 @@ const Home = () => {
   </div>
 </div>
 
-      {/* Bro Section (Unchanged) */}
+    
      
     </div>
   );
