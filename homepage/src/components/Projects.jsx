@@ -28,14 +28,7 @@ const Projects = () => {
       githubLink: "https://github.com/harsh-m-patil/Threads",
       technologies: ["NextJS", "React", "Express", "OAuth", "PostgreSQL", "GraphQL"],
     },
-    {
-      id: 4,
-      title: "GitTrack",
-      description: "GitHub Repository Tracker",
-      imgSrc: "https://github.com/harsh-m-patil/GitTrack/blob/main/assets/gitrack.png?raw=true",
-      githubLink: "https://github.com/harsh-m-patil/GitTrack",
-      technologies: ["React", "Node.js", "GitHub API", "Bootstrap"],
-    },
+    
   ];
 
   return (
