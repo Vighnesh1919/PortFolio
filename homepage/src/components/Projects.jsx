@@ -35,7 +35,7 @@ const Projects = () => {
     <div id="projects" className="flex flex-col gap-8">
       <div id="projects-title" className="flex items-center gap-2 justify-center">
         <i className="fa-solid fa-terminal"></i>
-        <h1 className="text-2xl dark:text-gray-300">Projects</h1>
+        <h1 className="text-2xl dark:text-gray-300">WEB DEVELOPMENT</h1>
       </div>
       <div id="projects-list" className="flex gap-12 justify-center items-center flex-wrap pb-20">
         {projectList.map((project) => (

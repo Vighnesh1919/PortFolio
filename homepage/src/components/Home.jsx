@@ -15,6 +15,7 @@ import Projects from "./Projects";
 
 import ImageItems from './ImageItems';
 import Experience from "./Experience";
+import DSAProjects from './DSAProjects';
 
 
 
@@ -125,17 +126,31 @@ const Home = () => {
 </div>
 
 
-{/* Reviews Section */}
 <div className="bg-[#0E0526] py-20 px-10">
   <div className="text-center mb-10">
     <h1 className="text-3xl font-bold text-white">Projects</h1>
   </div>
-  <div className="flex justify-center gap-8">
-    {/* Projects Component */}
-    <Projects />
+  
+  {/* Web Development Projects Section */}
+  <div className="mb-20">
+    <div className="text-center mb-10">
+      <h2 className="text-2xl font-semibold text-gray-300">Web Development</h2>
+    </div>
+    <div className="flex justify-center gap-8">
+      <Projects />
+    </div>
+  </div>
+
+  {/* DSA Projects Section */}
+  <div>
+    <div className="text-center mb-10">
+      <h2 className="text-2xl font-semibold text-gray-300">DSA Projects</h2>
+    </div>
+    <div className="flex justify-center gap-8">
+      <DSAProjects />
+    </div>
   </div>
 </div>
-
 
 
 
