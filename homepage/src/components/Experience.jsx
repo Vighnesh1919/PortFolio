@@ -9,42 +9,31 @@ import "react-vertical-timeline-component/style.min.css";
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "TechCorp Inc.",
-    date: "June 2021 - Present",
-    points: [
-      "Developed and maintained web applications using React and Node.js.",
-      "Improved application performance by 30% by optimizing code.",
-      "Led a team of 5 developers in delivering project milestones.",
+    "title": "Elected as the MESS-Secretary",
+    "company_name": "IIIT Sri City",
+    "date": "Current",
+    "points": [
+      "Oversaw dining quality and hygiene, ensuring high standards are met.",
+      "Collected and acted on student feedback to improve the dining experience.",
+      "Implemented initiatives to enhance menu diversity and catering to student preferences."
     ],
-    icon: "https://via.placeholder.com/100",
-    iconBg: "#FF5733",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/4/49/IIIT_Sri_City_Logo.png",
+    "iconBg": "#000000"
   },
   {
-    title: "Frontend Developer",
-    company_name: "Web Solutions",
-    date: "Jan 2019 - May 2021",
-    points: [
-      "Designed and implemented user interfaces with HTML, CSS, and JavaScript.",
-      "Collaborated with cross-functional teams to define project requirements.",
-      "Reduced page load time by 20% through efficient coding practices.",
+    "title": "Founding Core Member of the Spiritual Club, NIRVANA",
+    "company_name": "IIIT Sri City",
+    "date": "Aug 2023 - Sep 2024",
+    "points": [
+      "Organized events and activities promoting spiritual well-being.",
+      "Engaged the community in mindfulness and wellness initiatives.",
+      "Led efforts to create a supportive environment for students' holistic development."
     ],
-    icon: "https://via.placeholder.com/100",
-    iconBg: "#33FFBD",
-  },
+    "icon": "https://avatars.githubusercontent.com/u/137999626?s=280&v=4",
+    "iconBg": "#000000"
+  }
 
-  {
-    title: "Frontend Developer",
-    company_name: "Web Solutions",
-    date: "Jan 2019 - May 2021",
-    points: [
-      "Designed and implemented user interfaces with HTML, CSS, and JavaScript.",
-      "Collaborated with cross-functional teams to define project requirements.",
-      "Reduced page load time by 20% through efficient coding practices.",
-    ],
-    icon: "https://via.placeholder.com/100",
-    iconBg: "#33FFBD",
-  },
+ 
   // Add more experiences as needed
 ];
 
