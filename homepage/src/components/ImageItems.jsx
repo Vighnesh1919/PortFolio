@@ -1,5 +1,3 @@
-// ImageItems.jsx
-
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -21,208 +19,51 @@ import redux from '../assets/logo/redux.png';
 import postman from '../assets/logo/postman.png';
 import cpp from '../assets/logo/cpp.png';
 
-
-
-
 const ImageItems = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const items = [
+    { src: nodejs, alt: "Node.js", name: "Node.js", delay: 100 },
+    { src: express, alt: "Express Js", name: "Express Js", delay: 200 },
+    { src: react, alt: "React JS", name: "React JS", delay: 300 },
+    { src: next, alt: "Next JS", name: "Next JS", delay: 400 },
+    { src: ava, alt: "Java", name: "Java", delay: 500 },
+    { src: js, alt: "JavaScript", name: "JavaScript", delay: 600 },
+    { src: typescript, alt: "TypeScript", name: "TypeScript", delay: 700 },
+    { src: cpp, alt: "C++", name: "C++", delay: 800 },
+    { src: mysql, alt: "MySql", name: "MySql", delay: 900 },
+    { src: tailwind, alt: "Tailwind CSS", name: "Tailwind CSS", delay: 1000 },
+    { src: mongo, alt: "MongoDB", name: "MongoDB", delay: 1100 },
+    { src: go, alt: "GoLang", name: "GoLang", delay: 1200 },
+    { src: html, alt: "HTML", name: "HTML", delay: 1300 },
+    { src: git, alt: "Git", name: "Git", delay: 1400 },
+    { src: redux, alt: "Redux ToolKit", name: "Redux ToolKit", delay: 1500 },
+    { src: postman, alt: "PostMan", name: "PostMan", delay: 1600 },
+  ];
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center w-full mx-auto mt-30" data-aos="fade-left" data-aos-duration="1200" style={{ marginTop: '-130px' }}>
-  
-  {/* Node.js Item */}
-  <div className="flex flex-col items-center group mt-40"> 
-    <img
-      src={nodejs}
-      alt="Node.js"
-      className="w-20 h-20 object-cover bg-transparent transition-transform duration-300 transform group-hover:scale-110 group-hover:rotate-3"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200 transition-all duration-300 group-hover:text-blue-400">
-      Node.js
-    </p>
-  </div>
-
-  {/* JavaScript Item */}
-  <div className="flex flex-col items-center group mt-40"> 
-
-  <img
-      src={express}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Express Js</p>
-    
-  </div>
-
-  {/* React JS Item */}
-  <div className="flex flex-col items-center group mt-40"> 
-    <img
-      src={react}
-      alt="React JS"
-      className="w-20 h-20 object-cover "
-      data-aos="zoom-in"
-      data-aos-delay="300"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">React JS</p>
-  </div>
-
-
-  {/* Avatar Item */}
-  <div className="flex flex-col items-center group mt-40"> 
-    
-    <img
-      src={next}
-      alt="Next JS"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Next JS</p>
-  </div>
-
-  {/* Next JS Item */}
-  <div className="flex flex-col items-center">
-  <img
-      src={ava}
-      alt="Avatar"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Java</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-  <img
-      src={js}
-      alt="JavaScript"
-      className="w-20 h-20 object-cover bg-transparent"
-      data-aos="zoom-in"
-      data-aos-delay="200"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">JavaScript</p>
-  </div>
-
-  {/* TypeScript Item */}
-  <div className="flex flex-col items-center">
-    <img
-      src={typescript}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">TypeScript</p>
-  </div>
-  <div className="flex flex-col items-center">
-    <img
-      src={cpp}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">C++</p>
-  </div>
-
-  
-
-  <div className="flex flex-col items-center">
-    <img
-      src={mysql}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">MySql</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src={tailwind}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Tailwind CSS</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src={mongo}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">MongoDB</p>
-  </div>
-  <div className="flex flex-col items-center">
-    <img
-      src={go}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">GoLang</p>
-  </div>
-  <div className="flex flex-col items-center">
-    <img
-      src={html}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">HTML</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src={git}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Git</p>
-  </div>
- 
-
-  <div className="flex flex-col items-center">
-    <img
-      src={redux}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">Redux ToolKit</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <img
-      src={postman}
-      alt="TypeScript"
-      className="w-20 h-20 object-cover"
-      data-aos="zoom-in"
-      data-aos-delay="400"
-    />
-    <p className="mt-2 text-lg font-bold text-gray-200">PostMan</p>
-  </div>
-
- 
-
-  {/* Add More Items */}
-  {/* Repeat similar structure for additional items */}
-  
-</div>
-
+    <div
+      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-center w-full mx-auto mt-10"
+      data-aos="fade-left"
+      data-aos-duration="1200"
+    >
+      {items.map((item, index) => (
+        <div key={index} className="flex flex-col items-center group">
+          <img
+            src={item.src}
+            alt={item.alt}
+            className="w-20 h-20 object-cover bg-transparent transition-transform duration-300 transform group-hover:scale-110 group-hover:rotate-3"
+            data-aos="zoom-in"
+            data-aos-delay={item.delay}
+          />
+          <p className="mt-2 text-lg font-bold text-gray-200 transition-all duration-300 group-hover:text-blue-400">
+            {item.name}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 };
 

@@ -12,6 +12,7 @@ import 'aos/dist/aos.css'; // Don't forget to import AOS styles
 import videoSrc from '../assets/video.mp4';
 //import style from '../App.css';
 import Projects from "./Projects";
+import AboutMe from './Aboutme';
 
 import ImageItems from './ImageItems';
 import Experience from "./Experience";
@@ -39,7 +40,6 @@ const Home = () => {
       {/* Navigation Bar */}
       <NavBar />
       {/* <MeteorShower /> */}
-
       <div className=" overflow-hidden flex flex-col  justify-center text-center  h-screen bg-[#0E0526] relative">
       <div className="absolute flex  items-center bg-[rgba(30,200,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-135deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-[-90vh] overflow-hidden"></div>
 
@@ -66,64 +66,22 @@ const Home = () => {
 
   
 </div>
-
-
-
-
       </div>
 
+      <div className="overflow-hidden flex flex-col lg:flex-row items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
+      {/* Background Blur */}
+      <div className="absolute flex justify-center items-center bg-[rgba(30,200,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
 
+      {/* About Me Section */}
+      <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+        <AboutMe />
+      </div>
 
-
-
-
-      <div className="overflow-hidden flex items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
-  {/* Background Blur */}
-  <div className="absolute flex justify-center items-center bg-[rgba(30,200,170,0.1)] blur-lg rounded-full w-[850px] h-[450px] gap-10 transform rotate-[-35deg] scale-110 skew-x-6 translate-x-[40%] translate-y-[-85%] top-1/2 left-1/2 overflow-hidden"></div>
-
-  {/* About Me Section */}
-  <div className="max-w-2xl text-white -mt-32">
-  <h2 className="text-4xl font-extrabold text-gray-100 mb-4" data-aos="fade-in" data-aos-delay="700">About Me</h2>
-  
-  <div className="mb-8">
-    <h3 className="text-3xl font-semibold text-gray-200 mb-4" data-aos="fade-in" data-aos-delay="700">Web Development</h3>
-    <p
-      className="text-xl text-gray-300 leading-relaxed"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
-      I'm a passionate software developer with expertise in building dynamic web applications. Proficient in the MERN stack (MongoDB, Express.js, React, Node.js), I specialize in both frontend and backend development, creating seamless and interactive user experiences.
-    </p>
-  </div>
-
-  <div className="mt-10">
-    <h3 className="text-3xl font-semibold text-gray-200 mb-4 " data-aos="fade-in"
-    data-aos-delay="700">DSA Practice</h3>
-    <p
-      className="text-xl text-gray-300 leading-relaxed"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
-      I'm passionate about Data Structures and Algorithms (DSA). With over 1600+ rating on LeetCode and having solved 600+ questions, I enjoy tackling complex problems, optimizing solutions, and continuously improving my algorithmic skills to build scalable and efficient systems.
-    </p>
-  </div>
-</div>
-
-
-
-  {/* Technical Skills Section */}
-  <div className="flex flex-wrap gap-10 items-center justify-end w-2/5 mr-10 -mt-15 " data-aos="fade-left" data-aos-duration="1200" style={{ marginTop: '-130px' }}>
-    {/* Icon Items */}
-    <div className="flex flex-col items-center group">
-    <ImageItems />
-</div>
-
-
-
-    
-  </div>
-  
-</div>
+      {/* Technical Skills Section */}
+      <div className="flex flex-wrap gap-10 items-center justify-center lg:justify-end w-full lg:w-2/5">
+        <ImageItems />
+      </div>
+    </div>
 
 
 <div className="bg-[#0E0526] py-20 px-10">
@@ -153,29 +111,15 @@ const Home = () => {
 </div>
 
 
-
-
-
-
-
-
-
      
 <div className="bg-[#0E0526] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
 <Experience />
   <div className="flex justify-center gap-12 flex-wrap">
 
- 
-
-
-
-
-
   </div>
 </div>
 
     
-     
     </div>
   );
 };
