@@ -17,22 +17,22 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/vighnesh-barage",
+    url: "https://www.linkedin.com/in/vighnesh-barage-724a25259/?originalSubdomain=in",
     logo: linkedinLogo,
   },
   {
     name: "Gmail",
-    url: "mailto:vighnesh@example.com",
+    url: "mailto:vighneshbarage@gmail.com",
     logo: gmailLogo,
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/vighnesh1919",
+    url: "https://leetcode.com/u/Lord_Ramos",
     logo: leetcodeLogo,
   },
   {
     name: "Codeforces",
-    url: "https://codeforces.com/profile/vighnesh1919",
+    url: "https://codeforces.com/profile/vighneshbarage",
     logo: codeforcesLogo,
   },
 ];
