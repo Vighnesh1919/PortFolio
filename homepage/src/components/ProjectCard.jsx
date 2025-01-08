@@ -2,15 +2,16 @@ import React from "react";
 
 const ProjectCard = ({ title, description, imgSrc, liveDemo, githubLink, technologies }) => {
   return (
-    <div className="border hover:-translate-y-2 hover:shadow-lg hover:shadow-gray-300 dark:border-gray-600 dark:hover:shadow-blue-800 group/card transition duration-300 border-gray-400 shadow-lg h-[30rem] w-96 sm:w-[28rem] rounded-xl flex flex-col justify-around p-3">
+    <div
+      className="border hover:-translate-y-2 hover:shadow-lg hover:shadow-gray-300 dark:border-gray-600 dark:hover:shadow-blue-800 group/card transition duration-300 border-gray-400 shadow-lg h-[30rem] w-96 sm:w-[28rem] rounded-xl flex flex-col justify-around p-3"
+      data-aos="fade-up"
+    >
       <img
         src={imgSrc}
         alt={`${title} preview`}
         className="rounded-xl h-64 object-cover border"
       />
-      <div
-        className="flex justify-between py-2 px-4 items-center rounded-lg dark:group-hover/card:bg-gradient-to-br group-hover/card:bg-gradient-to-l dark:group-hover/card:from-blue-900 dark:group-hover/card:via-slate-900 dark:group-hover/card:to-blue-950 group-hover/card:from-purple-50 group-hover/card:via-orange-50 group-hover/card:to-blue-50 transition duration-300"
-      >
+      <div className="flex justify-between py-2 px-4 items-center rounded-lg dark:group-hover/card:bg-gradient-to-br group-hover/card:bg-gradient-to-l dark:group-hover/card:from-blue-900 dark:group-hover/card:via-slate-900 dark:group-hover/card:to-blue-950 group-hover/card:from-purple-50 group-hover/card:via-orange-50 group-hover/card:to-blue-50 transition duration-300">
         <div>
           <p className="text-2xl">{title}</p>
           <p className="text-lg text-gray-600 dark:text-gray-400">{description}</p>

@@ -33,15 +33,9 @@ const Home = () => {
 
       {/* Navigation Bar */}
       <NavBar />
-     
-      <div>
-      <HeroSection />
-     
-    </div>
-
-
-
-
+      <div id="my-profile">
+  <HeroSection />
+</div>
 
       <div className="overflow-hidden flex flex-col lg:flex-row items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
       {/* Background Blur */}
@@ -54,7 +48,9 @@ const Home = () => {
 
       {/* Technical Skills Section */}
       <div className="flex flex-wrap gap-10 items-center justify-center lg:justify-end w-full lg:w-2/5">
-        <ImageItems />
+      <div id="skills">
+  <ImageItems />
+</div>
       </div>
     </div>
 
@@ -66,29 +62,31 @@ const Home = () => {
   
   {/* Web Development Projects Section */}
   <div className="mb-20">
-    <div className="text-center mb-10">
-      <h2 className="text-2xl font-semibold text-gray-300">Web Development</h2>
-    </div>
+   
     <div className="flex justify-center gap-8">
-      <Projects />
+    <div id="projects">
+  <Projects />
+</div>
     </div>
   </div>
 
   {/* DSA Projects Section */}
-  <div>
+  {/* <div>
     <div className="text-center mb-10">
       <h2 className="text-2xl font-semibold text-gray-300">DSA Projects</h2>
     </div>
     <div className="flex justify-center gap-8">
       <DSAProjects />
     </div>
-  </div>
+  </div> */}
 </div>
 
 
-     
+
 <div className="bg-[#0E0526] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
-<Experience />
+<div id="experience">
+  <Experience />
+</div>
   <div className="flex justify-center gap-12 flex-wrap">
 
   </div>

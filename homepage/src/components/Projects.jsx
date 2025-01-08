@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS styles
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation
+      easing: "ease-in-out", // Easing function
+      once: false, // Animation happens more than once
+    });
+  }, []);
+
   const projectList = [
     {
       id: 1,
@@ -28,7 +38,7 @@ const Projects = () => {
       githubLink: "https://github.com/harsh-m-patil/Threads",
       technologies: ["NextJS", "React", "Express", "OAuth", "PostgreSQL", "GraphQL"],
     },
-    
+    // other projects...
   ];
 
   return (
@@ -37,7 +47,12 @@ const Projects = () => {
         <i className="fa-solid fa-terminal"></i>
         <h1 className="text-2xl dark:text-gray-300">WEB DEVELOPMENT</h1>
       </div>
-      <div id="projects-list" className="flex gap-12 justify-center items-center flex-wrap pb-20">
+      <div
+        id="projects-list"
+        className="flex gap-12 justify-center items-center flex-wrap pb-20"
+        data-aos="fade-up"
+        data-aos-duration="10000" 
+      >
         {projectList.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
