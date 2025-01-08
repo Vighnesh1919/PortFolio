@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SocialMediaLinks from './SocialMediaLinks';
 
 const HeroSection = () => {
   useEffect(() => {
@@ -34,6 +35,9 @@ const HeroSection = () => {
         >
           Passionate Coder & Full Stack Developer
         </p>
+
+        {/* Social Media Links */}
+        <SocialMediaLinks />
       </div>
     </div>
   );
