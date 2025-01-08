@@ -29,10 +29,7 @@ const Home = () => {
         <HeroSection />
       </div>
 
-      {/* Social Media Links */}
-      <div className="flex justify-center mt-6">
-        <SocialMediaLinks />
-      </div>
+     
 
       <div className="overflow-hidden flex flex-col lg:flex-row items-center justify-between py-5 px-10 bg-[#0E0526] relative h-screen">
         {/* Background Blur */}
