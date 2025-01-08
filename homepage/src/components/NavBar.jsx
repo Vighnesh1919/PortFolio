@@ -6,9 +6,9 @@ const NavBar = () => {
     <div className="sticky top-0 z-10 flex h-16 items-center justify-between border-y-2 border-[#0E0526] bg-[#0E0526] px-6 sm:px-10 py-4">
       {/* Brand Name */}
       <div className="text-xl sm:text-2xl text-white font-bold">
-        <Link to="/">
+        <a href="#my-profile">
           <span>My_Profile</span>
-        </Link>
+        </a>
       </div>
 
       {/* Navigation Links */}
@@ -22,8 +22,8 @@ const NavBar = () => {
         <a href="#experience">
           <span>Experience</span>
         </a>
-        <a href="#my-profile">
-          <span>My Profile</span>
+        <a href="/assets/Vighnesh.pdf" target="_blank" rel="noopener noreferrer">
+          <span>Resume</span>
         </a>
         <Link to="/login">
           <Button text="Contact Me" />
@@ -47,8 +47,8 @@ const NavBar = () => {
           <a href="#experience" className="block px-4 py-2">
             Experience
           </a>
-          <a href="#my-profile" className="block px-4 py-2">
-            My Profile
+          <a href="/assets/Vighnesh.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2">
+            Resume
           </a>
           <Link to="/login" className="block px-4 py-2">
             <Button text="Contact Me" />

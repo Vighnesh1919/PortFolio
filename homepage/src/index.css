@@ -104,3 +104,6 @@ p {
     @apply flex-col space-y-4;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

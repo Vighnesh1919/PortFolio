@@ -39,3 +39,6 @@ body {
     border-color: transparent;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
