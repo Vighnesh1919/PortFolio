@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import ava from '../assets/logo/Java.png';
+import ava from '../assets/logo/java.png';
 import react from '../assets/logo/react.png';
 import js from '../assets/logo/javascript.png';
 import nodejs from '../assets/logo/nodejs.png';
