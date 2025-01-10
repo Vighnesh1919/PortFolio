@@ -27,7 +27,7 @@ const socialMediaLinks = [
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/Lord_Rams",
+    url: "https://leetcode.com/u/Lord_Ramos",
     logo: leetcodeLogo,
   },
   {
