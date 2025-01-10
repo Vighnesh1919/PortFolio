@@ -20,6 +20,9 @@ const experiences = [
     "icon": "https://upload.wikimedia.org/wikipedia/en/4/49/IIIT_Sri_City_Logo.png",
     "iconBg": "#000000"
   },
+
+  
+
   {
     "title": "Founding Core Member of the Spiritual Club, NIRVANA",
     "company_name": "IIIT Sri City",

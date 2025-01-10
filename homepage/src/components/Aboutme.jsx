@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Aboutme = () => {
+const AboutMe = () => {
   return (
-    <div className="max-w-2xl text-white -mt-32 p-5 md:p-10">
+    <div className="max-w-2xl text-white p-5 md:p-10 lg:p-0">
       <h2 className="text-3xl md:text-4xl font-extrabold text-gray-100 mb-4" data-aos="fade-in" data-aos-delay="700">
         About Me
       </h2>
@@ -28,4 +28,4 @@ const Aboutme = () => {
   );
 };
 
-export default Aboutme;
+export default AboutMe;
