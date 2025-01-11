@@ -31,16 +31,16 @@ const ImageItems = () => {
     { src: next, alt: "Next JS", name: "Next JS", delay: 400 },
     { src: ava, alt: "Java", name: "Java", delay: 500 },
     { src: js, alt: "JavaScript", name: "JavaScript", delay: 600 },
-    { src: typescript, alt: "TypeScript", name: "TypeScript", delay: 700 },
+    // { src: typescript, alt: "TypeScript", name: "TypeScript", delay: 700 },
     { src: cpp, alt: "C++", name: "C++", delay: 800 },
     { src: mysql, alt: "MySql", name: "MySql", delay: 900 },
     { src: tailwind, alt: "Tailwind CSS", name: "Tailwind CSS", delay: 1000 },
     { src: mongo, alt: "MongoDB", name: "MongoDB", delay: 1100 },
-    { src: go, alt: "GoLang", name: "GoLang", delay: 1200 },
+    // { src: go, alt: "GoLang", name: "GoLang", delay: 1200 },
     { src: html, alt: "HTML", name: "HTML", delay: 1300 },
     { src: git, alt: "Git", name: "Git", delay: 1400 },
     { src: redux, alt: "Redux ToolKit", name: "Redux ToolKit", delay: 1500 },
-    { src: postman, alt: "PostMan", name: "PostMan", delay: 1600 },
+    // { src: postman, alt: "PostMan", name: "PostMan", delay: 1600 },
   ];
 
   return (
