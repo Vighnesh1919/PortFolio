@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[#0E0526] py-32 px-10" data-aos="slide-up" data-aos-duration="9000">
+      <div className="bg-[#0E0526] py-31 px-10" data-aos="slide-up" data-aos-duration="9000">
         <div id="experience">
           <Experience />
         </div>
