@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS styles
 import ProjectCard from "./ProjectCard";
 import chess from "../assets/project/chess.png";
+import image from "../assets/project/image.png";
+import reserve from "../assets/project/reserve.png";
 
 
 const Projects = () => {
@@ -27,19 +29,23 @@ const Projects = () => {
     {
       id: 2,
       title: "Reserver",
-      description: "Car Parking and Servicing Website ",
-      imgSrc: "https://private-user-images.githubusercontent.com/119025949/341953636-7a74096a-74ef-4419-8646-aedb3c89590a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY1MDA1MDYsIm5iZiI6MTczNjUwMDIwNiwicGF0aCI6Ii8xMTkwMjU5NDkvMzQxOTUzNjM2LTdhNzQwOTZhLTc0ZWYtNDQxOS04NjQ2LWFlZGIzYzg5NTkwYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDExMFQwOTEwMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OGRmZmNhN2VlYWY2ODRmYTJiZjAwZmYxM2FmYjcwZWRkZTUwYzY4MjRkNmM3YmVlY2VmMjFjNWI0Y2U3N2E0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.UnCerjFNcqwujR9gFy58CGT9WqUCLs4pDGyJsIfp-os",
+      description: "Car Parking and Servicing Website",
+      imgSrc: reserve,
       githubLink: "https://github.com/harsh-m-patil/EZStay",
       technologies: ["EJS", "CSS", "Express", "MongoDB"],
+      liveDemo: "https://sahilkasare.github.io/RESERVE/"
     },
     {
       id: 3,
-      title: "Online Chess",
-      description: "Live Chess website",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQBE2LCKoeza-P5yCYrY0ZU8U9iC1D1-U1w&s",
-      githubLink: "https://github.com/harsh-m-patil/Threads",
-      technologies: ["NextJS", "React", "Express", "OAuth", "PostgreSQL", "GraphQL"],
+      title: "FoodConnect",
+      description: "Website connecting events with NGOs to donate surplus food and serve free meals.",
+      imgSrc: image,
+      githubLink: "https://github.com/vighnesh1919/FoodConnect",
+      technologies: ["NextJS", "React", "Express", "TypeScript"],
+      liveDemo: "https://foodconnect-dev.vercel.app/"
     }
+    
+    
     
     // other projects...
   ];

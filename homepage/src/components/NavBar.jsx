@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Button from './Button';
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -29,22 +27,29 @@ const NavBar = () => {
         <a href="#experience">
           <span>Experience</span>
         </a>
-        <a href="/assets/Vighnesh.pdf" target="_blank" rel="noopener noreferrer">
-          <span>Resume</span>
+        
+        {/* Google Drive Folder Link for Resume */}
+        <a
+          href="https://drive.google.com/file/d/1yP6FWCiZ-gc_vV_5YCRJ_p53YxDa25T7/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block px-4 py-2"
+        >
+          Resume
         </a>
-        <Link to="/login">
-          <Button text="Contact Me" />
-        </Link>
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white">
+      <div className="md:hidden relative">
+        {/* Hamburger Icon */}
+        <button className="text-white" onClick={toggleMenu}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-        {menuOpen && (
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
           <div className="absolute right-0 mt-2 w-48 bg-[#0E0526] text-white shadow-lg">
             <a href="#skills" className="block px-4 py-2">
               Skills
@@ -55,12 +60,16 @@ const NavBar = () => {
             <a href="#experience" className="block px-4 py-2">
               Experience
             </a>
-            <a href="/assets/Vighnesh.pdf" target="_blank" rel="noopener noreferrer" className="block px-4 py-2">
+
+            {/* Google Drive Folder Link for Mobile */}
+            <a
+              href="https://drive.google.com/file/d/1yP6FWCiZ-gc_vV_5YCRJ_p53YxDa25T7/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-4 py-2"
+            >
               Resume
             </a>
-            <Link to="/login" className="block px-4 py-2">
-              <Button text="Contact Me" />
-            </Link>
           </div>
         )}
       </div>

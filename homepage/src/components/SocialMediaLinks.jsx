@@ -53,10 +53,10 @@ const SocialMediaLinks = () => {
           key={index}
           className="icon"
           style={{
-            backgroundColor: "white",
+            backgroundColor: " rgb(47, 168, 233)",
             padding: "10px",
             borderRadius: "50%",
-            boxShadow: "0 0 15px rgba(0, 255, 255, 0.6)",
+            boxShadow: "0 0 15px rgba(239, 241, 232, 0.6)",
             marginBottom: "10px",
             transition: "transform 0.3s ease",
             cursor: "pointer",
