@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Responsive Design Tweaks */
+body {
+  @apply bg-gray-900 text-gray-200 font-sans antialiased;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* AOS CSS */
+.aos-init {
+  opacity: 0;
+}
+
+.aos-animate {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pop-up {
+  animation: popUp 1s ease-in-out;
+}
+
+/* Typing Effect */
+.typing-effect {
+  @apply inline-block overflow-hidden border-r-2 border-transparent font-poppins text-lg text-gray-200;
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  width: 100%;
+}
+
+.typing-effect-line {
+  @apply block mb-2;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsive Typography */
+h1 {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4;
+}
+
+p {
+  @apply text-base sm:text-lg lg:text-xl leading-relaxed;
+}
+
+/* Responsive Layout */
+.flex-layout {
+  @apply flex flex-wrap items-center justify-center space-y-6 md:space-y-0 md:space-x-6;
+}
+
+/* Buttons */
+.button {
+  @apply bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Utility Classes for Mobile First */
+.sm\:card {
+  @apply bg-gray-800 rounded-lg shadow-lg p-6 sm:w-full md:w-1/2 lg:w-1/3;
+}
+
+@media (min-width: 640px) {
+  .typing-effect {
+    font-size: 1.5rem; /* Slightly larger font for desktops */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px; /* Larger max-width for bigger screens */
+  }
+}
+
+/* Adjustments for Smaller Devices */
+@media (max-width: 768px) {
+  .flex-layout {
+    @apply flex-col space-y-4;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
