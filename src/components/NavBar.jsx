@@ -30,7 +30,7 @@ const NavBar = () => {
         
         {/* Google Drive Folder Link for Resume */}
         <a
-          href="https://drive.google.com/file/d/1yP6FWCiZ-gc_vV_5YCRJ_p53YxDa25T7/view?usp=sharing"
+          href="https://drive.google.com/drive/folders/1-lECynBj-Pw236K1gFHRndTujYxxN1-G"
           target="_blank"
           rel="noopener noreferrer"
           className="block px-4 py-2"
@@ -63,7 +63,7 @@ const NavBar = () => {
 
             {/* Google Drive Folder Link for Mobile */}
             <a
-              href="https://drive.google.com/file/d/1yP6FWCiZ-gc_vV_5YCRJ_p53YxDa25T7/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/1-lECynBj-Pw236K1gFHRndTujYxxN1-G"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-4 py-2"
