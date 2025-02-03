@@ -1,0 +1,44 @@
+
+body {
+  background-color: #17092E;
+  
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+.typing-effect {
+  display: inline-block;
+  white-space: normal; /* Allow the text to wrap */
+  overflow: hidden;
+  border-right: 0.15em solid transparent; /* Simulate the cursor */
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  font-weight: 400; /* Slightly lighter for better readability */
+  font-size: 1.25rem; /* Font size for readability */
+  color: #e0e0e0; /* Light gray color for sleek look */
+  animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  width: 100%; /* Ensure the element takes full width */
+}
+
+.typing-effect-line {
+  display: block; /* Ensure each line starts on a new line */
+  margin-bottom: 0.5rem; /* Spacing between lines */
+  white-space: normal; /* Allow text to wrap naturally */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
