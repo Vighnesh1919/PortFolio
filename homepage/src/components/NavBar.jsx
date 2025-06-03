@@ -30,7 +30,7 @@ const NavBar = () => {
         
         {/* Google Drive Folder Link for Resume */}
         <a
-          href="https://drive.google.com/file/d/1yP6FWCiZ-gc_vV_5YCRJ_p53YxDa25T7/view?usp=sharing"
+          href="https://drive.google.com/file/d/1AOEMA3_SKePT7K6fiG8td8FybkPdkq9s/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="block px-4 py-2"
