@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import chess from "../assets/project/chess.png";
 import image from "../assets/project/image.png";
 import reserve from "../assets/project/reserve.png";
+import ytshort from "../assets/project/yt-short.png";
 
 
 const Projects = () => {
@@ -35,8 +36,19 @@ const Projects = () => {
       technologies: ["EJS", "CSS", "Express", "MongoDB"],
       liveDemo: "https://sahilkasare.github.io/RESERVE/"
     },
-    {
-      id: 3,
+
+     {
+  id: 3,
+  title: "YTShorts Clone",
+  description: "A clone of YouTube Shorts using Next.js 15, TypeScript, Prisma, PostgreSQL, NeonDB, and ImageKit.io.",
+  imgSrc: ytshort,
+  githubLink: "https://github.com/vighnesh1919/YTShortsClone",
+  technologies: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "NeonDB", "ImageKit.io"],
+  liveDemo: "https://ytshortsclone-dev.vercel.app/"
+},
+
+     {
+      id: 4,
       title: "FoodConnect",
       description: "Website connecting events with NGOs to donate surplus food and serve free meals.",
       imgSrc: image,
